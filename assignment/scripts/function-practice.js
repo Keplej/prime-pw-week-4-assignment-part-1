@@ -70,13 +70,12 @@ console.log(getLast([1, 2, 3, 4, 5]));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find(value, array){
   for (i = 0; i < array.length; i++) {
-    if (value > 3 || value === array[i]) {
+    if (true) {
       return true;
-    } else {
-      return false;
     }
-  }
+    return false;
 }
+console.log(find([17]));
 
 //come back to this and figure out how to test this
 
