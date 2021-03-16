@@ -20,17 +20,19 @@ function helloName() {
 console.log(helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber, secondNumber) {
+function addNumbers() {
   // return firstNumber + secondNumber;
-  return firstNumber + secondNumber;
+  let add = 7 + 5;
+  return add;
 }
-console.log(addNumbers(7,5));
+console.log(addNumbers());
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree(multiOne, multiTwo, multiThree){
-  return multiOne * multiTwo * multiThree;
+function multiplyThree(){
+  let answer = 4 * 9 * 15;
+  return answer;
 }
-console.log(multiplyThree(4, 9, 15));
+console.log(multiplyThree());
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
