@@ -60,7 +60,7 @@ function getLast(array) {
 }
 console.log(getLast([]));
 console.log(getLast(['fish', 'cat', 'bird', 'dog']));
-console.log(getLast([1, 2, 3, 4, 5]));
+console.log(getLast([1, 2, 3, 4, 5, 6]));
 
 //Double check on it you need to write a line for return 'undefined'
 
@@ -70,14 +70,14 @@ console.log(getLast([1, 2, 3, 4, 5]));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find(value, array){
   for (i = 0; i < array.length; i++) {
-    if (true) {
-      return true;
+    if (value === array[i]) {
+      return true; }
     }
     return false;
-}
-console.log(find([17]));
+  }
+console.log(find(0, [7]));
 
-//come back to this and figure out how to test this
+//The problem is using getLast([1, 2, 3, 4, 5]) figure out why and correct it.
 
 // ----------------------
 // Stretch Goals
