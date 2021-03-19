@@ -81,7 +81,7 @@ console.log(find(1, [1, 2, 3]));
 console.log(find(0, [10, 11, 99]));
 //The problem is using getLast([1, 2, 3, 4, 5]) figure out why and correct it. (Used a differnt things inside the loop)
 //Why not use else or a different loop? Kind of hit a brick wall for a while on this question. Kind of just brute forced it to work.
-
+//It works but not sure if it is still correct. Do more research on functions with loops inside of it.
 
 // ----------------------
 // Stretch Goals
@@ -89,7 +89,11 @@ console.log(find(0, [10, 11, 99]));
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  if (letter === 'a') {
+    return true;
+  } else {
+    return false;
+  }
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
