@@ -69,15 +69,19 @@ console.log(getLast([1, 2, 3, 4, 5, 6]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find(value, array){
-  for (i = 0; i < array.length; i++) {
-    if (value === array[i]) {
-      return true; }
+  for (let i of array) {
+    if (i === value) {
+      return true;
     }
     return false;
   }
-console.log(find(0, [7]));
+}
 
-//The problem is using getLast([1, 2, 3, 4, 5]) figure out why and correct it.
+console.log(find(1, [1, 2, 3]));
+console.log(find(0, [10, 11, 99]));
+//The problem is using getLast([1, 2, 3, 4, 5]) figure out why and correct it. (Used a differnt things inside the loop)
+//Why not use else or a different loop? Kind of hit a brick wall for a while on this question. Kind of just brute forced it to work.
+
 
 // ----------------------
 // Stretch Goals
