@@ -99,7 +99,7 @@ console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll(item) { //not 100% sure im supposed to add sum or array
+function sumAll(item) {
   let sum = 0
   for (let i = 0; i < item.length; i++) {
     sum += item[i];
@@ -109,9 +109,10 @@ function sumAll(item) { //not 100% sure im supposed to add sum or array
 }
 console.log(sumAll([1, 2, 3, 4, 5]));
 
-//Tested out a while loop and a for loop. Both work. Going to put the while loop in the notes for later refernce
+//Look at week 3 part 3 #9 for referencing how to do this
+//Tested out a while loop and a for loop. Both work. Going to put the while loop in the notes for later reference
 
-//function sumAll(item) { //not 100% sure im supposed to add sum or array
+//function sumAll(item) {
   //let sum = 0
   //let i = 0
   //while (i < item.length) {
@@ -125,8 +126,17 @@ console.log(sumAll([1, 2, 3, 4, 5]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+function positiveNumber(number) {
+  let positive = []
+  if (number > 0) {
+    return true;
+  }
+}
+console.log(positiveNumber(1, 4, 5));
+console.log(positiveNumber(-5, 3, 19));
 
-
+//Pretty sure this isn't right. Look at assingment 4 part 3 for reference.
+//Something with adding numbers to the let positive []. Similar to global var basket that was empty in wk 4 part 3
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
