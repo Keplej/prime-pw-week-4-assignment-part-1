@@ -126,14 +126,36 @@ console.log(sumAll([1, 2, 3, 4, 5]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function positiveNumber(number) {
-  let positive = []
-  if (number > 0) {
-    return true;
+
+//changed the function and array to make it easier to type out then what I had before.
+
+function positiveArray(numbers) {
+  let positiveNumbers = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    let number = numbers[i];
+    if (number > 0)
+      positiveNumbers.push(number)
   }
+  return positiveNumbers;
 }
-console.log(positiveNumber(1, 4, 5));
-console.log(positiveNumber(-5, 3, 19));
+
+
+
+console.log(positiveArray([1, 2, 3, -10])); //should return as undefined but just shows the whole array
+console.log(positiveArray([-2, -3, -10, -19, 2]));
+console.log(positiveArray([-1, -2, -3, -4]));
+
+
+
+//Found this online from fullstack website and it worked perfectly but I didn't feel comfortable using it as its using things
+//I haven't used before.
+
+//function positiveNumber(allPositive) {
+  //return allPositive.filter(function(value) {
+    //return value > 0;
+  //});
+//}
 
 //Pretty sure this isn't right. Look at assingment 4 part 3 for reference.
 //Something with adding numbers to the let positive []. Similar to global var basket that was empty in wk 4 part 3
