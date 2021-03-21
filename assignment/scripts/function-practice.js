@@ -129,6 +129,13 @@ console.log(sumAll([1, 2, 3, 4, 5]));
 
 //changed the function and array to make it easier to type out then what I had before.
 
+//breaking down the question logically
+//- get input array
+//- Is first number positive? if yes, store for later
+//- Is second number positive? If yes, store for later [...]
+//- Is last number positive? If yes, store for later
+//- Return stored positive numbers
+
 function positiveArray(numbers) {
   let positiveNumbers = [];
 
@@ -140,13 +147,11 @@ function positiveArray(numbers) {
   return positiveNumbers;
 }
 
-
-
-console.log(positiveArray([1, 2, 3, -10])); //should return as undefined but just shows the whole array
+console.log(positiveArray([1, 2, 3, -10]));
 console.log(positiveArray([-2, -3, -10, -19, 2]));
 console.log(positiveArray([-1, -2, -3, -4]));
 
-
+//This question was very difficult for me for a while till I tried using number
 
 //Found this online from fullstack website and it worked perfectly but I didn't feel comfortable using it as its using things
 //I haven't used before.
@@ -157,9 +162,24 @@ console.log(positiveArray([-1, -2, -3, -4]));
   //});
 //}
 
-//Pretty sure this isn't right. Look at assingment 4 part 3 for reference.
+//Look at assingment 4 part 3 for reference.
 //Something with adding numbers to the let positive []. Similar to global var basket that was empty in wk 4 part 3
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+//Creat a function that takes a string and returns the number (count) of vowels contauned within it.
+
+function countVowels(string) {
+  let vowelsNumber = 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  for (let char of string) {
+    if (vowels.includes(char)) {
+      vowelsNumber++
+    }
+  }
+  return vowelsNumber;
+}
+
+console.log(countVowels('hello'));
