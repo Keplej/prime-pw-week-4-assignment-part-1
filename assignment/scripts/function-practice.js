@@ -13,11 +13,11 @@ console.log('Test - should say "Hello World!"', hello());
 
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
-function helloName() {
-  return 'Hello Johnny!';
+function helloName(name) {
+  return 'Hello ' + name + '!';
 }
 // Remember to call the function to test
-console.log(helloName());
+console.log(helloName('Johnny'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -27,11 +27,11 @@ function addNumbers(firstNumber, secondNumber) {
 console.log(addNumbers(5, 7));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree(){
-  let answer = 4 * 9 * 15;
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+  let answer = firstNumber * secondNumber * thirdNumber;
   return answer;
 }
-console.log(multiplyThree());
+console.log(multiplyThree(1, 2, 3));
 
 
 //wanted to do two different things between q3 and q4. Q3 function uses firstNumber and secondNumber
@@ -69,16 +69,16 @@ console.log(getLast([1, 2, 3, 4, 5, 6]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find(value, array){
-  for (let i of array) {
-    if (i === value) {
+  for (let i = 0; i < array.length; i++)
+    if (value === array[i]) {
       return true;
     }
-    return false;
-  }
+  return false;
 }
 
 console.log(find(1, [1, 2, 3]));
 console.log(find(0, [10, 11, 99]));
+console.log(find(1, [3, 2, 1]));
 //The problem is using getLast([1, 2, 3, 4, 5]) figure out why and correct it. (Used a differnt things inside the loop)
 //Why not use else or a different loop? Kind of hit a brick wall for a while on this question. Kind of just brute forced it to work.
 //It works but not sure if it is still correct. Do more research on functions with loops inside of it.
